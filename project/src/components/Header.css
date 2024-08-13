@@ -1,0 +1,21 @@
+/* Flex container for logo and nav items */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 0px; /* Adjust the spacing between logo and nav items */
+}
+
+/* Ensure the logo has appropriate spacing */
+.navbar-brand {
+  margin-right: 0; /* Remove any default margin */
+}
+
+/* Navbar Link Styling */
+.navbar-light .nav-link:hover {
+  color: #ff9900;
+}
+
+/* Ensure dropdown arrow is pointing down */
+.navbar-nav .nav-item .dropdown-toggle::after {
+  transform: rotate(0deg);
+}
