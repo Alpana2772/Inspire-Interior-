@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.text-overlay, .text-below {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translateY(-50%);
+    color: rgb(21, 20, 20);
+    padding: 20px;
+    z-index: 1;
+    max-width: 50%;
+    text-align: right;
+}
+
+.text-below {
+    position: static;
+    transform: none;
+    left: 0;
+    top: 0;
+    text-align: center;
+    max-width: 100%;
+}
+
+.text-overlay h2, .text-below h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    color: #1d1c1c;
+    text-align: left;
+}
+
+.text-overlay h6, .text-below h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #f36f3a;
+    text-align: left;
+}
+
+.btn {
+  width: 200px;
+  margin-top: 40px;
+  height: 60px;
+  border-radius: 0px;
+  background-color: #f36f3a;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /* font-weight: bold; */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Apply scale when the button is hovered */
+.hovered {
+  transform: scale(1.1);
+}
+/* Ensure that the text-below is properly aligned and visible on small screens */
+@media (max-width: 767.98px) {
+  .text-overlay {
+      display: none; /* Hide the overlay on small screens */
+  }
+
+  .text-below {
+      position: static;
+      transform: none;
+      left: 0;
+      top: 0;
+      max-width: 100%;
+      padding: 20px;
+  }
+
+  .text-below h2 {
+      font-size: 40px; /* Adjust the size for smaller screens if necessary */
+      text-align: center;
+      
+  }
+
+  .text-below h6 {
+      font-size: 18px; /* Adjust the size for smaller screens if necessary */
+      text-align: center;
+  }
+}
+.image-container {
+  /* Add custom styles if needed */
+  /* margin-left: 60px; */
+  margin-top: 10%;
+  border: solid 1px red;
+}
+
+.image-container img {
+  height: auto; /* Maintains aspect ratio */
+  margin-left: 18%;
+}

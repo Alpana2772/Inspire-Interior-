@@ -22,8 +22,8 @@ const handleMouseEnter = () => {
         <Navbar.Brand href="#home" >
           <img
                 src="logo3.png"
-                width="100px"
-                height="70px"
+                width="120px"
+                height="50px"
                 className="d-inline-block align-top"
                 alt="Inspire logo"
                 data-aos="flip-left"
@@ -99,4 +99,6 @@ const handleMouseEnter = () => {
 };
 
 export default Header;
+
+
 
